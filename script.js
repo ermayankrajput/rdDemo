@@ -2,25 +2,16 @@ $(document).ready(function(){
     // By default menu is set from css
     // Use local storage to get user preferences for menu, but on resize we should remove open wrapper
     
+    // Resize will only work if menu is large, to setup small menu on resizing
     $(window).on('resize', function(){
         var win = $(this);
         $(".open-wrapper").hide();
         if (win.width() >= 1500) { 
-            $(".sidenav-lg").show();
-            $(".sidenav-sm").hide();
-            $(".main").removeClass("small-menu-activated");
-            $(".top-menu-data").removeClass("small-menu-activated");
+            toggleMenu('large')
         }else{
-            $(".sidenav-lg").hide();
-            $(".sidenav-sm").show();
+            toggleMenu('small')
         }
-    });
-    function menuActivated(){
-        $(".main").toggleClass("small-menu-activated");
-        $(".top-menu-data").toggleClass("small-menu-activated");
-    }
-
-    
+    });    
 });
 
 // Just for the demo, we do not need that much code, as we already have local storage setup
