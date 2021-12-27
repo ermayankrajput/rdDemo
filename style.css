@@ -128,6 +128,9 @@ span.toggle-lg{
     .sidenav-sm{
         display: none;
     }
+    .small-menu-activated{
+        margin-left: 100px;
+    }
 }
 @media only screen and (max-width: 1499.9px) {
     .sidenav-lg{

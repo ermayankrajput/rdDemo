@@ -7,8 +7,12 @@ $(document).ready(function(){
         if(width < 1500){
             $(".open-wrapper").toggle();
         }
+        if(width > 1500){
+            menuActivated();
+        }
         $(".sidenav-lg").toggle();
         $(".sidenav-sm").toggle();
+        
         
     });
     $(window).on('resize', function(){
@@ -22,4 +26,8 @@ $(document).ready(function(){
             $(".sidenav-sm").show();
         }
     });
+    function menuActivated(){
+        $(".main").toggleClass("small-menu-activated");
+        $(".top-menu-data").toggleClass("small-menu-activated");
+    }
 });
