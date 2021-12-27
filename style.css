@@ -1,0 +1,146 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+.sidenav-lg {
+    height: 100%;
+    width: 20%;
+    max-width: 375px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(216, 216, 216);
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow-y: scroll;
+    z-index: 3;
+}
+.sidenav-lg a, .sidenav-sm a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #161616;
+    display: block;
+}
+.sidenav-sm {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(216, 216, 216);
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow-y: scroll;
+    z-index: 2;
+}
+.main {
+    margin-left: 20%;
+    margin-top: 100px;
+}
+.main.nav-sm{
+    margin-left: 100px;
+}
+.d-inline-block{
+    display: inline-block!important;
+}
+.logo-header{
+    position: fixed;
+    top: 0px;
+    background: white;
+    width: 20%;
+    max-width: 375px;
+}
+.sidenav-sm .logo-header{
+    width: 100px;
+}
+top-menu{
+    display: block;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 12px 0px;
+    margin: auto;
+    z-index: 1;
+    background: white;
+    box-shadow: 0px 0px 15px 2px #d9d9d9;
+}
+.top-menu-data{
+    margin-left: 20%;
+}
+.page-title-etcq{
+    max-width: 1466px;
+    margin: auto;
+}
+.content{
+    padding-top: 30px;
+}
+.all-pages{
+    border: 1px solid;
+    max-width: 1466px;
+    margin: auto;
+}
+.page-content{
+    padding: 2.75% 4%;
+}
+.index-form{
+    border: 1px solid;
+    max-width: 1296px;
+    margin: auto;
+    padding: 3% 0px;
+}
+
+span.toggle{
+    position: fixed;
+    bottom: 30px;
+    left: 74px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px 2px #d9d9d9;
+    cursor: pointer;
+}
+
+span.toggle-lg{
+    position: absolute;
+    left: 84%;
+}
+
+.open-wrapper{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: rgb(0 0 0 / 50%);
+    z-index: 2;
+    display: none;
+}
+
+@media only screen and (min-width: 1500px) {
+    .sidenav-sm{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1499.9px) {
+    .sidenav-lg{
+        width: 375px;
+        display: none;
+    }
+    .sidenav-lg .logo-header{
+        width: 375px;
+    }
+    .main{
+        margin-left: 100px;
+    }
+    .top-menu-data{
+        margin-left: 100px;
+    }
+}
